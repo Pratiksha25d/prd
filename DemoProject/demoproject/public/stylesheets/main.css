@@ -1,0 +1,42 @@
+
+.login-form{
+	width: 400px;
+	height: 500px;
+	background-color: black;
+	color: white;
+    margin:auto;
+    margin-top:100px;
+    padding: 40px 20px;
+	box-sizing: border-box;
+
+}
+h1{
+	text-align: center;
+}
+label{
+	font-weight: bold;
+	font-size: 20px;
+}
+.login-form input{
+width: 100%;
+margin-bottom: 20px;
+}
+.login-form input[type="text"],input[type="password"]
+{	border: none;
+	background: transparent;
+	height: 35px;
+	color:grey;
+	border-bottom: 1px solid white;
+	font-size: 16px;
+}
+.login-form input[type="submit"]
+{
+	background-color: cyan;
+	font-size: 20px;
+	height: 40px;
+	border: none;
+}
+.login-form input[type="submit"]:hover
+{
+	background-color: red;
+}

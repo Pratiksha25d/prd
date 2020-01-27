@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Synthetica</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="carousel.css">
+	<link rel="stylesheet" type="text/css" href="crew.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	
+	<style>
+		.bar-chart
+		{
+			flex-direction:row;
+			display: inline-block;
+			width: 40%;
+		 	margin-left:35px;
+	    }
+		.bar-wrapper
+		{
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			color: #414A52;
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font: inherit;
+			font-size: 100%;
+			vertical-align: baseline;
+			background-color: #414A52;
+		}
+		.bar
+		{
+			height:25px;
+			width: 0px;
+			border-radius:3px;
+			height: 10px;
+			margin: 10px 0;
+			background:#7AE2DE;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="#">
+				<img src="images/Logo.png" alt="logo">
+			</a>
+		</div>
+		<div class="nav">
+			<ul class="primary-nav">
+				<li>
+					<a href="#collective-id " id="a">The Collective</a>
+				</li>
+				<li>
+					<a href="#crew-id" id="a">The Crews</a>
+				</li>
+				<li>
+					<a href="#articles-id" id="a">Articles</a>
+				</li>
+				<li>
+					<a href="#">Freebies</a>
+				</li>
+			</ul>
+			<ul class="secondary-nav">
+				<li class="subscribe">
+					<a href="#">Subscribe</a>
+				</li>
+				<li class="search-icon">
+					<a href="#"><img src="images/magnify1.png"></a>
+				</li>
+			</ul>
+		</div>
+
+		<!--<div class="menu_button">
+			<button class="logo" id="logobutton">   
+
+			</button>
+			<div class="navlinks">
+				<a href="#">The Collective</a>
+				<a href="#">The Crew</a>
+				<a href="#">Articles</a>
+				<a href="#">Freebies</a>
+				<a href="#">Subscribe</a>
+			</div>
+			
+		 	
+		</div> -->
+		<div class="hamburger">
+				<div class="menubackground">
+				<button  id="menubtn" class="menubar">
+				  <div></div>
+				  <div></div>
+				  <div></div> 
+				</button>
+			  </div>
+				<div class="menuitems">
+				  <ul>
+					<li>The Collective</li>
+					<li>Crew</li>
+					<li>Articles</li>
+					<li>Freebies</li>
+				</ul>
+			   </div>
+			  </div>
+	</header>
+	<div class="content">
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="Images/hero-bg-01.jpg" style="width:100%">
+				<div class="ctext">
+					<h1>Introducing,Synthetica. A blissful HTML5/CSS3 Template,free forever</h1>
+					<button class="carousel-button">Learn More</button>
+					<p>
+						<i>Synthetica is a free,HTML5/CSS3 template,available for download exclusively via Codrops</i>
+					</p>
+				</div>
+			</div>
+			<div class="mySlides fade">
+				<img src="Images/hero-bg-02.jpg" style="width:100%">
+				<div class="ctext">
+					<h1>Get a head start,with the synthetica sketch file</h1>
+					<button class="carousel-button">Download sketch file</button>
+					<p>
+						<i>create your landing page in minutes with Synthetica's sketch style guide </i>
+					</p>
+				</div>
+			</div>
+			<div class="mySlides fade">
+				<img src="Images/hero-bg-03.jpg" style="width:100%">
+				<div class="ctext">
+					<h1>Download Synthetica today,it's free forever.</h1>
+					<button class="carousel-button">Download template</button>
+					<p>
+						<i>available exclusively from Codrops</i>
+					</p>
+				</div>
+			</div>
+			<div class="dots">
+				<span class="dot" onclick="currentSlide(1)"></span> 
+				<span class="dot" onclick="currentSlide(2)"></span> 
+				<span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+		</div>
+		<section class="collective" id="collective-id">
+			<h3>The collective</h3>
+			<p>
+				8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella. Kinfolk 
+				gluten-free lo-fi quinoa. Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale 
+				chips chillwave kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic 
+				slow-carb hashtag, hammock pour-over chambray viral VHS normcore.
+			</p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/FMug2TPuWAE" frameborder="0" 
+			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<p>	8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella. Kinfolk
+				gluten-free lo-fi quinoa.
+
+				Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips chillwave 
+				kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic slow-carb 
+				hashtag, hammock pour-over chambray viral VHS normcore.
+			</p>
+		</section>
+		<section class="crew" id="crew-id">
+			<h3>The crew</h3>
+			<div class="crew-container">
+				<ul>
+					<li>
+						<a href="#"><img src="images/crew-peter-finlan.jpg" alt="a" height="300" width="250"><br></a>
+						<div class="img-text">
+							<div class="text">
+								<h5>Peter finlan</h5>
+								<p>
+									8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#"><img src="images/crew-blaz-robar.jpg" alt="a" height="300" width="250"><br></a>
+						<div class="img-text">
+							<div class="text">
+								<h5>Blaz robar</h5>
+								<p>
+									8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#"><img src="images/crew-mary-lou.jpg" alt="a" height="300" width="250"><br></a>
+						<div class="img-text">
+							<div class="text">
+								<h5>Mary lou</h5>
+								<p>
+									8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#"><img src="images/crew-dude.jpg" alt="a" height="300" width="250"><br></a>
+						<div class="img-text">
+							<div class="text">
+								<h5>Kobe west</h5>
+								<p>
+									8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="row-skills">
+				<div class="bar-chart">
+					<h5 class="bar-chart-text">
+						EXPERIENCE DESIGN 
+					</h5>
+					<div class="bar-wrapper">
+						<div class="bar" title="90%">
+										
+						</div>
+					</div>
+				</div>
+				<div class="bar-chart">
+					<h5 class="bar-chart-text">
+						HTML5/CSS3
+					</h5>
+					<div class="bar-wrapper">
+						<div class="bar" title="95%">
+										
+						</div>
+					</div>
+				</div>	
+				<div class="bar-chart">
+					<h5 class="bar-chart-text">
+						INTERACTIVE PROTOTYPING
+					</h5>
+					<div class="bar-wrapper">
+						<div class="bar" title="80%">
+										
+						</div>
+					</div>
+				</div>
+				<div class="bar-chart">
+					<h5 class="bar-chart-text">
+						VISUAL DESIGN
+					</h5>
+					<div class="bar-wrapper">
+						<div class="bar" title="90%">
+										
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="status" id="articles-id">
+			<div class="status-container">
+				<div class="awards">
+					<span>
+						<img src="images/cup.png" alt="pen" height="50" width="50">
+					</span>
+					<div class="data">
+						<p class="status-number-cup">41</p>
+						<p class="ptext">awards won</p>
+					</div>
+				</div>
+			</div>
+			<div class="status-container">
+				<div class="awards">
+					<span>
+						<img src="images/book.png" alt="pen" height="50" width="50">
+					</span>
+					<div class="data">
+						<p class="status-number-book">343</p>
+						<p class="ptext">articles</p>
+					</div>
+				</div>
+			</div>
+			<div class="status-container">
+				<div class="awards">
+					<span>
+						<img src="images/pen.png" alt="pen"height="50" width="50">
+					</span>
+					<div class="data">
+						<p class="status-number-pen">43</p>
+						<p class="ptext">freebies</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="get_started">
+			
+
+			</div>
+			<div class="main_footer">
+<img src="Images/footer.png" height="200" width="400">
+			</div>
+		</footer>
+	</div>
+	
+	<script>
+			document.getElementById("menubtn").addEventListener('click',showmenuitems);
+			function showmenuitems(){
+				var   x=document.getElementsByClassName("menuitems")[0];
+				if(x.style.visibility!="hidden")
+				{
+				x.style.visibility="hidden";
+				}
+				else{
+				x.style.visibility="visible";
+				}
+			}
+		  </script>
+	<script src="carousel.js" defer>
+
+	</script>
+	<script src="crewbar.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+	<script type="text/javascript">
+		$(".status-number-cup").counterUp({delay:10, time:2000});
+		$(".status-number-book").counterUp({delay:10, time:2000});
+		$(".status-number-pen").counterUp({delay:10, time:2000});
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		 $(document).ready(function()
+		 {
+			$("a").on('click', function(event) 
+				{
+					if (this.hash !== "") 
+						{
+							event.preventDefault();
+  							var hash = this.hash;
+							$('html, body').animate({scrollTop: $(hash).offset().top}, 2000, function(){
+								window.location.hash = hash;
+ 							});
+						} 
+				});
+		});
+	</script>	
+</body>
+</html>

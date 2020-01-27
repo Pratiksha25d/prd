@@ -1,0 +1,8 @@
+[0m[[0m[31merror[0m] [0m[0merror while loading sample_maths, class file '/Users/pdq5936/.ivy2/local/springer.training/scala2020_2.13/0.1/jars/scala2020_2.13.jar(sample_maths.class)' is broken[0m
+[0m[[0m[31merror[0m] [0m[0m(class java.lang.RuntimeException/error reading Scala signature of sample_maths.class: Scala signature sample_maths has wrong version[0m
+[0m[[0m[31merror[0m] [0m[0m expected: 5.0[0m
+[0m[[0m[31merror[0m] [0m[0m found: 5.2 in sample_maths.class)[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/pdq5936/Desktop/sbt_scala/src/main/scala/demo.scala:4:12: sample_maths does not have a constructor[0m
+[0m[[0m[31merror[0m] [0m[0m   val a = new sample_maths[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

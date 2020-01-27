@@ -1,0 +1,7 @@
+clean
+compile
+reload
+test
+run 8080
+dist
+last update

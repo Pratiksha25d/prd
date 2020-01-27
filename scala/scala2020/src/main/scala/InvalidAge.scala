@@ -1,0 +1,1 @@
+class InvalidAge(a:String)extends Exception(a){}

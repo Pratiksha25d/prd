@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main Page</title>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="header-nav">
+				<div class="logo">
+					<a href="">
+						<img src="">
+					</a>
+				</div>
+				<div class="primary-navlinks">
+					<ul class="primary-nav">
+						<li>
+							<a href="#collective">THE COLLECTIVE</a>
+						</li>
+						<li>
+							<a href="#crew">THE CREWS</a>
+						</li>
+						<li>
+							<a href="#articles">ARTICLES</a>
+						</li>
+						<li>
+							<a href="#freebies">FREEBIES</a>
+						</li>
+					</ul>
+				</div>
+				<div class="navicon">
+					<div class="secondary-navlinks">
+						<ul class="secondary-nav">
+							<li class="subscribe">
+								<a href="#subscribe">SUBSCRIBE</a>
+							</li>
+							<li class="search">
+								<a href="">
+									<i>Search </i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<div class="carousel">
+				<h1 class="first">Introducing Synthetica. A blissful HTML5/CSS3 Template,free forever</h1>
+				<button class="first-button">Learn More</button>
+			</div>
+			<div>
+				<h1 class="second">Get a head start,with the synthetica sketch file</h1>
+				<button class="second-button">DOWNLOAD SKETCH FILE</button>
+			</div>
+			<div>
+				<h1 class="third">Download Synthetica today,it's free forever</h1>
+				<button class="third-button">DOWNLOAD TEMPLATE</button>
+			</div>
+		</div>
+		<div class="contenet">
+			<h5>THE COLLECTIVE</h5>
+			<p>
+				8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella. Kinfolk gluten-free lo-fi quinoa. Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips chillwave kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic slow-carb hashtag, hammock pour-over chambray viral VHS normcore.</p>
+			<p>
+				8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella. Kinfolk gluten-free lo-fi quinoa.
+			</p>
+			<p>
+				Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips chillwave kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic slow-carb hashtag, hammock pour-over chambray viral VHS normcore.
+			</p>
+		</div>
+		<div class="crew">
+			<ul class="row">
+				<li>
+					<a href="#"><img src="images/crew-peter-finlan.jpg" alt="a" height="300" width="250"><br></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/crew-blaz-robar.jpg" alt="a" height="300" width="250"><br></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/crew-mary-lou.jpg" alt="a" height="300" width="250"><br></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/crew-dude.jpg" alt="a" height="300" width="250"><br></a>
+				</li>
+			</ul>
+			<div class="row skills">
+				<div class="col-left">
+					<div class="bar-chart">
+						<h5 class="bar-chart-text">
+							EXPERIENCE DESIGN
+							<span class="push-right">90%</span>
+						</h5>
+						<div class="bar-wrapper">
+							<div class="bar" data-percentage="90%">
+								
+							</div>
+						</div>
+					</div>
+					<div class="bar-chart">
+						<h5 class="bar-chart-text">
+						HTML5/CSS3
+							<span class="push-right">95%</span>
+						</h5>
+						<div class="bar-wrapper">
+							<div class="bar" data-percentage="95%">
+								
+							</div>
+						</div>
+					</div>
+					<div>
+						
+					</div>
+				</div>
+					<div class="col-right">
+					<div class="bar-chart">
+						<h5 class="bar-chart-text">
+							INTERACTIVE PROTOTYPING
+							<span class="push-right">80%</span>
+						</h5>
+						<div class="bar-wrapper">
+							<div class="bar" data-percentage="80%">
+								
+							</div>
+						</div>
+					</div>
+					<div class="bar-chart">
+						<h5 class="bar-chart-text">
+						VISUAL DESIGN
+							<span class="push-right">90%</span>
+						</h5>
+						<div class="bar-wrapper">
+							<div class="bar" data-percentage="90%">
+								
+							</div>
+						</div>
+					</div>
+					<div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+
+
+
+<div class="status-container">
+            <div class="awards">
+                <span class="images">
+                    <img src="images/pen.png" alt="pen" height="80" width="80">
+                </span>
+                <div class="awards-data">
+                    <p class="status-number">30</p>
+                    <p>awards won</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+		<div class="content-wrapper">
+               <div class="awards">
+                    <span>
+                            <img src="iconcup2.png" alt="cup icon">
+                    </span>
+                        <div class="awards-container">
+                         <p class="stat-number-cup">
+                             24
+                         </p>
+                         <p class="text">
+                                AWARDS WON
+                         </p>
+                        </div>
+               </div>
+               <div class="awards">
+                    <span>
+                            <img src="book.png" alt="cup icon">
+                    </span>
+                        <div class="awards-container">
+                         <p class="stat-number-book">
+                             341
+                         </p>
+                         <p class="text">
+                                ARTICLES
+                         </p>
+                        </div>
+               </div>
+               <div class="awards">
+                    <span>
+                            <img src="pen.png" alt="cup icon">
+                    </span>
+                        <div class="awards-container">
+                         <p class="stat-number-pen">
+                             43
+                         </p>
+                         <p class="text">
+                                FREEBIES
+                         </p>
+                        </div>
+               </div>
+           </div>

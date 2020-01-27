@@ -1,0 +1,1 @@
+document.write("Hello Script tag in head");

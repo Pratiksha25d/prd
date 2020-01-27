@@ -1,0 +1,387 @@
+body {
+margin:0;
+padding:0;
+font-family: Raleway,Verdana,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+}
+header
+{
+    width: 100%;
+    height:100px;
+    float: left;
+    //display: flex;
+    
+    a, ul, li{
+        text-decoration: none;
+        font-size:14px;
+        margin: 0;
+        padding:0;
+    }
+        .logo{
+            width: 25%;
+            float: left;
+            //flex-direction: row;
+            img{
+                width: 100%;
+                height:101px;
+            }
+        }
+        .nav{
+            float: right;
+            ul{
+                float:left;
+                padding: 24px;
+                li{
+                    display: inline-block;
+                    padding:10px;
+                    border-right: 1px solid #414a41;
+                }
+                a{
+                    font-size: 14px;
+                    color: #414a52;
+                    padding:10px;
+                    text-transform: uppercase;
+
+                    &:hover{
+                     color: #7AE2DE;
+                     border-bottom: 1px solid #7AE2DE;
+                    }
+                }
+            }
+            li:last-child{
+                border-right: none;
+                color: #ffffff;
+            }
+        }
+        .hamburger{
+            visibility: hidden;
+            //  display: none;
+            .menubackground{
+              background: #414A52;
+              float: right;
+              width: 100px;
+              height: 100px;
+              .menubar{
+                div{
+                  width: 60px;
+                  height: 5px;
+                background-color:white;
+                 margin: 6px 12px;
+                 //float: right;
+                 //width: 100px;
+                 //height: 94px;
+               }
+                float: right;
+                background-image: "hamburger.png";
+                 height: 94px;
+                 width: 100px;
+                 margin-top: 20px;          
+              }
+            }
+              .menuitems{
+                 height: 310px;
+                      background-image: linear-gradient(to top, #4F5056, #3D3E42);
+                        color: #FFFFFF;
+                        //  display: none;
+                width: 100%;
+                z-index: 2;
+                  li{
+                    list-style: none;
+                    font-size: 30px;
+                    padding:10px
+                  }
+              }
+          }
+        /*.menu_button{
+            visibility: hidden;
+            float: right;
+            margin-left: 28%;
+            // display:none;
+            
+            position: relative;
+            z-index: 1;
+            // .logo{
+            //     background-color:cyan;
+            // }
+            img{
+                float: right;
+                height: 100px;
+                display: block;
+            }
+            .navlinks{
+                display: block;
+                position: relative;
+                overflow: hidden;
+                background-color: #333;
+                visibility: hidden;
+            a{
+                color: white;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                display: block;
+            } 
+                .logo{
+                    background: black;
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            }
+            
+  
+        } */
+        ul:last-child{
+            background: #414a52;
+            padding: 20px;
+            height: 59px;
+            li{
+                border-right: 1px solid #000;
+            }
+            a{
+                color: #7AE2DE;
+            }
+            a.search-icon{
+                border-bottom: 1px solid #414a52;
+                padding: 0px;
+                float: none;
+            }
+        }
+        li:last-child{
+            border-right: none;
+            box-shadow: none;
+            color: #ffffff;
+            float: right;
+            border-radius: 0;
+            margin:0;
+        }
+}
+.content{
+    width:100%;
+
+display:inline-block;
+.collective{
+            margin: 0 auto;
+            margin: 11%;
+            color: #000;
+            width: 75%;
+            display: inline-block;
+            iframe{
+                margin-left: 200px;
+                border: 10px solid lightgray;
+            }
+        h3{
+            float: left;
+            font-size: 18px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: underline;
+            text-decoration-color: #7AE2DE;
+            font-weight: 500;
+         }
+         p{
+            margin-bottom: 55px;
+             float: right;
+             width: 75%;
+             
+
+         }
+        }
+ footer{
+     height: 800px;
+     .get_started{
+         background-color:#7AE2DE;
+         height:300px;
+     }
+     .main_footer{
+         background-color: #484848;
+         height: 500px;
+
+     }
+ }       
+}
+
+/*@media only screen and (max-width:1082px){
+    .nav{
+        display:none;
+    }
+    header{
+    .menu_button{
+        // display:inline-block;
+        // float: right;
+         visibility: visible;
+    }
+}
+
+}
+@media only screen and (max-width:795px){
+.content{
+    .slideshow-container{
+        .mySlides {
+
+            .ctext{
+                padding: 0;
+            
+            
+        }
+    }
+}
+}
+}
+@media only screen and (max-width:740px){
+    
+}*/
+/************ For ipadPro ***************/
+@media only screen and (max-width:1024px){
+    
+header{
+    display:flex;
+    .logo{
+        flex-direction: row;
+    }
+    .nav{
+        width:84%;
+        display:none;
+    }
+    .hamburger{
+        // display:inline-block;
+        // float: right;
+         visibility: visible;
+         margin-left: 492px;
+    }
+}
+.content{
+    .slideshow-container{
+        z-index: 1;
+        .mySlides{
+            img{
+                height: 1000px;
+            }
+        }
+    }
+    .crew{
+        .crew-container{
+            padding: 22px;
+            li{
+                margin-left:0;
+                img{
+                    height: 300px;
+    width: 220px;
+    margin-right: 20px;
+                }
+            }
+        }
+        .row-skills{
+            padding:0;
+            .bar-chart{
+                flex-direction: row;
+                display: inline-block;
+                width: 46%;
+                margin-left: 26px;
+            }
+        }
+    }
+    .status{
+        .status-container{
+            padding-left: 120px;
+        }
+    }
+}
+}
+/************ For ipad   ************/
+@media only screen and (max-width:768px){
+    body{
+       margin:0;
+    
+    .content{
+        .slideshow-container{
+            .mySlides {
+                img{
+                    height:600px;
+                    }
+                .ctext{
+                    padding: 0;
+                }
+            }
+            .dots{
+                display: flex;
+                top: 80%;
+                left: 40%;
+            }
+        }
+    
+    .collective{
+        h3{
+            font-size: 22px;
+        }
+        p{
+            font-size: 14px;
+            width: 100%
+        }
+        iframe{
+            margin-left: 0px;
+            height:270px;
+            width:460px;
+        }
+    }
+    .crew{
+        h3{
+            margin-left:40px;
+        }
+        .crew-container{
+            padding-left: 0px;
+            width: 100%;
+            margin-right: 0;
+            ul{
+                display:flex;
+                li{
+                    flex-direction:column;
+                    margin-bottom: 20px;
+                    img{
+                        width: 300px;
+                        height: 400px;
+                    }
+                    .img-text{
+                        height: 500px;
+                    }
+                }
+              
+            }
+        }
+        .row-skills{
+            .bar-chart{
+                flex-direction: column;
+                width: 90%;
+                margin-left: 60px;
+                .bar-chart-text{
+                    font-size:22px;
+                }
+            }
+        }
+      
+    }
+    .status{
+        width:100%;
+        .status-container{
+            padding-left:36px;
+        }
+    }
+}
+}
+}
+/********** For iPhone 6/7/8 **********/
+@media only screen and (max-width:375px){
+    body{
+    .content{
+        .collective{
+            iframe{
+                margin-left: 0px;
+        height: 200px;
+        width: 290px;
+            }
+        }
+    }
+}
+}

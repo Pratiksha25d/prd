@@ -1,0 +1,6 @@
+==>routes
+	==>controllers ---decides what to show---1.view 2.error 
+		==>services
+			==>API
+				==>Response
+

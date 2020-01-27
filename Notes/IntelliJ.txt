@@ -1,0 +1,12 @@
+==>To run the project
+  	sbt
+  	run portno (if u doesnt specify portno by default it will run on 9000)
+
+==>mySQL
+   - cd /usr/local/mysql/bin/
+   - ./mysql -uroot -p
+
+
+==> option[string]
+     - when we want - null or some
+     -option has two parameters null and some

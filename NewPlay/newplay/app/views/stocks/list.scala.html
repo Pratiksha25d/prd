@@ -1,0 +1,15 @@
+@(stocks: List[Stock])
+@main("Stocks") {
+
+<h1>You have @stocks.size Stock(s)</h1>
+
+<div>
+    <ul>
+        @stocks.map { stock =>
+        <li>
+            @stock.symbol
+        </li>
+        }
+    </ul>
+</div>
+}
