@@ -1,0 +1,15 @@
+@(login: List[login])
+@main("login") {
+
+<h1>You have @login.size login(s)</h1>
+
+<div>
+    <ul>
+        @login.map { login =>
+        <li>
+            @login.symbol
+        </li>
+        }
+    </ul>
+</div>
+}
