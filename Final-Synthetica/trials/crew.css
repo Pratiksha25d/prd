@@ -1,0 +1,89 @@
+.crew {
+  background-color: #f0f0f0;
+  padding: 20px; }
+  .crew h3 {
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: 3px solid #7AE2DE;
+    padding-bottom: 10px;
+    margin-left: 200px; }
+  .crew .crew-container {
+    width: 80%;
+    display: flex;
+    padding-left: 120px; }
+    .crew .crew-container ul {
+      text-decoration: none;
+      list-style-type: none;
+      flex-wrap: wrap;
+      display: flex;
+      margin: 0 auto;
+      display: contents; }
+      .crew .crew-container ul li {
+        display: inline-block;
+        position: relative;
+        margin-left: 30px; }
+        .crew .crew-container ul li:hover img {
+          opacity: 1; }
+        .crew .crew-container ul li:hover .img-text {
+          opacity: 0.6;
+          background-color: #7AE2DE; }
+        .crew .crew-container ul li img {
+          margin: 0; }
+        .crew .crew-container ul li .img-text {
+          transition: .5s ease;
+          opacity: 0;
+          position: absolute;
+          text-align: center;
+          bottom: 0px;
+          height: 300px;
+          width: 100%;
+          padding-top: 5px; }
+          .crew .crew-container ul li .img-text .text {
+            color: white;
+            font-size: 16px;
+            padding-top: 60px; }
+  .crew .row-skills {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 130px; }
+
+.status {
+  background-image: url("images/stats-bg.jpg");
+  margin: 0;
+  display: flex;
+  padding-top: 100px;
+  color: #F4F6F9;
+  height: 180px;
+  background-size: 100% 400px;
+  background-repeat: no-repeat; }
+  .status .status-container {
+    display: inline-block;
+    padding-left: 161px;
+    display: flex;
+    border-right: solid 1px rgba(255, 255, 255, 0.25); }
+    .status .status-container .awards {
+      display: flex;
+      margin-right: 10px;
+      width: 27%;
+      padding-right: 50px; }
+    .status .status-container .data {
+      display: flex;
+      margin-left: 20px;
+      display: inline-block;
+      text-transform: uppercase; }
+      .status .status-container .data .status-number-cup, .status .status-container .data .status-number-book, .status .status-container .data .status-number-pen {
+        font-size: 40px;
+        margin: 0px; }
+      .status .status-container .data .ptext {
+        color: white;
+        font-size: 20px;
+        margin: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+      .status .status-container .data span img {
+        margin: 0;
+        opacity: 1; }
+
+/*# sourceMappingURL=crew.css.map */

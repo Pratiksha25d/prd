@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>crew Page</title>
+    <link rel="stylesheet" type="text/css" href="crew.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <style>
+         .bar-chart{
+            flex-direction:row;
+            display: inline-block;
+            width: 40%;
+            margin-left:35px;
+   
+        }
+            .bar-wrapper{
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+          color: #414A52;
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          font: inherit;
+          font-size: 100%;
+          vertical-align: baseline;
+          background-color: #414A52;
+            }
+            .bar{
+                height:25px;
+                width: 0px;
+                border-radius:3px;
+                height: 10px;
+                margin: 10px 0;
+                background:#7AE2DE;
+            }
+        
+    </style>
+    
+</head>
+<body>
+<section class="crew">
+        <h3>The crew</h3>
+        <div class="crew-container">
+        <ul>
+            <li>
+                <a href="#"><img src="images/crew-peter-finlan.jpg" alt="a" height="300" width="250"><br></a>
+                <div class="img-text">
+                   <div class="text">
+                       <h5>Peter finlan</h5>
+                       <p>
+                            8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.
+                       </p>
+                   </div>
+                </div>
+            </li>
+            <li>
+                <a href="#"><img src="images/crew-blaz-robar.jpg" alt="a" height="300" width="250"><br></a>
+                <div class="img-text">
+                    <div class="text">
+                        <h5>Blaz robar</h5>
+                        <p>
+                             8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#"><img src="images/crew-mary-lou.jpg" alt="a" height="300" width="250"><br></a>
+                <div class="img-text">
+                    <div class="text">
+                        <h5>Mary lou</h5>
+                        <p>
+                            8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#"><img src="images/crew-dude.jpg" alt="a" height="300" width="250"><br></a>
+                <div class="img-text">
+                    <div class="text">
+                        <h5>Kobe west</h5>
+                        <p>
+                            8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        </div>
+       <div class="row-skills">
+            <div class="bar-chart">
+                <h5 class="bar-chart-text">
+                    EXPERIENCE DESIGN 
+                </h5>
+                <div class="bar-wrapper">
+                    <div class="bar" title="90%">
+                                
+                    </div>
+                </div>
+            </div>
+            <div class="bar-chart">
+                <h5 class="bar-chart-text">
+                    HTML5/CSS3
+                </h5>
+                <div class="bar-wrapper">
+                    <div class="bar" title="95%">
+                                
+                    </div>
+                </div>
+            </div>	
+            <div class="bar-chart">
+                <h5 class="bar-chart-text">
+                    INTERACTIVE PROTOTYPING
+                </h5>
+                <div class="bar-wrapper">
+                    <div class="bar" title="80%">
+                                
+                    </div>
+                </div>
+            </div>
+            <div class="bar-chart">
+                <h5 class="bar-chart-text">
+                    VISUAL DESIGN
+                </h5>
+                <div class="bar-wrapper">
+                    <div class="bar" title="90%">
+                                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="status">
+            <div class="status-container">
+                <div class="awards">
+                    <span>
+                        <img src="images/cup.png" alt="pen" height="50" width="50">
+                    </span>
+                    <div class="data">
+                        <p class="status-number-cup">41</p>
+                        <p class="ptext">awards won</p>
+                    </div>
+                </div>
+            </div>
+            <div class="status-container">
+                <div class="awards">
+                    <span>
+                        <img src="images/book.png" alt="pen" height="50" width="50">
+                    </span>
+                    <div class="data">
+                        <p class="status-number-book">343</p>
+                        <p class="ptext">articles</p>
+                    </div>
+                </div>
+            </div>
+            <div class="status-container">
+                 <div class="awards">
+                    <span>
+                         <img src="images/pen.png" alt="pen"height="50" width="50">
+                    </span>
+                    <div class="data">
+                        <p class="status-number-pen">43</p>
+                        <p class="ptext">freebies</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="articles">
+        <div class="articles-head">
+            <h3>
+                Latest Articles
+            </h3>
+            <div class="sortby">
+                <h5>Sort by</h5>
+                
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+       $(".status-number-cup").counterUp({delay:10, time:2000});
+       $(".status-number-book").counterUp({delay:10, time:2000});
+       $(".status-number-pen").counterUp({delay:10, time:2000});
+    </script>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script>
+            $("document").ready(function (){
+                $('.bar').each(function() {
+                    var percent = $(this).attr('title');
+                   $(this).animate({width: percent},3000);
+                });
+            });
+    </script>
+    </body>
+    </html>

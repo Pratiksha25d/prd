@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Synthetica</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="carousel.css">
+	<link rel="stylesheet" type="text/css" href="crew.css">
+	<link rel="stylesheet" type="text/css" href="menuburger.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> 
+	<style>
+		.bar-chart
+		{
+			flex-direction:row;
+			display: inline-block;
+			width: 40%;
+		 	margin-left:35px;
+	    }
+		.bar-wrapper
+		{
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			color: #414A52;
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font: inherit;
+			font-size: 100%;
+			vertical-align: baseline;
+			background-color: #414A52;
+		}
+		.bar
+		{
+			height:25px;
+			width: 0px;
+			height: 10px;
+			margin: 10px 0;
+			background:#7AE2DE;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="#">
+				<img src="images/Logo.png" alt="logo">
+			</a>
+		</div>
+		<div class="nav">
+			<ul class="primary-nav">
+				<li>
+					<a href="#collective-id " id="a">The Collective</a>
+				</li>
+				<li>
+					<a href="#crew-id" id="a">The Crews</a>
+				</li>
+				<li>
+					<a href="#articles-id" id="a">Articles</a>
+				</li>
+				<li>
+					<a href="#freshest-freebies-id">Freebies</a>
+				</li>
+			</ul>
+			<ul class="secondary-nav">
+				<li class="subscribe">
+					<a href="#">Subscribe</a>
+				</li>
+				<li class="search-icon">
+					<a href="#"><img src="images/magnify1.png"></a>
+				</li>
+			</ul>
+		</div>
+		<div class="hamburger" id="hamburger">
+				<div id="menu" onclick="onClickMenu()">
+					<div id="bar1" class="mbar"></div>
+					<div id="bar2" class="mbar"></div>
+					<div id="bar3" class="mbar"></div>
+				</div>
+				<ul class="menu-nav" id="menu-nav">
+					<li><a href="#">The collective</a></li>
+					<li><a href="#">The crew</a></li>
+					<li><a href="#">articles</a></li>
+					<li><a href="#">freebies</a></li>
+				</ul>
+		</div>
+			<!--  <div class="menubackground">
+				<button  id="menubtn" class="menubar">
+				  <div></div>
+				  <div></div>
+				  <div></div> 
+				</button>
+			</div> -->
+			<!-- <div class="menu-btn" onclick="onmenuBtnClick()">
+				<div class="menu-btn_burger"></div>
+	
+			</div> -->
+			<!-- <div class="menuitems" id="menu">
+				<ul>
+					<li>The Collective</li>
+					<li>Crew</li>
+					<li>Articles</li>
+					<li>Freebies</li>
+				</ul>
+			</div> -->
+				<!-- <div id="menu-bar">
+					<div id="menu" onclick="onClickMenu()">
+						<div id="bar1" class="bar"></div>
+						<div id="bar2" class="bar"></div>
+						<div id="bar3" class="bar"></div>
+					</div>
+					<ul class="nav" id="nav">
+						<li><a href="#">The collective</a></li>
+						<li><a href="#">The crew</a></li>
+						<li><a href="#">articles</a></li>
+						<li><a href="#">freebies</a></li>
+					</ul>
+				</div> -->
+			
+	</header>
+   
+
+	
+	 <div class="content">
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="Images/hero-bg-01.jpg" style="width:100%">
+				<div class="ctext">
+					<h1>Introducing,Synthetica. A blissful HTML5/CSS3 Template,free forever</h1>
+					<button class="carousel-button">Learn More</button>
+					<p class="ctext-p">
+						<i>Synthetica is a free,HTML5/CSS3 template,available for download exclusively via Codrops</i>
+					</p>
+				</div>
+			</div>
+			<div class="mySlides fade">
+				<img src="Images/hero-bg-02.jpg" style="width:100%">
+				<div class="ctext">
+					<h1>Get a head start,with the synthetica sketch file</h1>
+					<button class="carousel-button">Download sketch file</button>
+					<p class="ctext-p">
+						<i>create your landing page in minutes with Synthetica's sketch style guide </i>
+					</p>
+				</div>
+			</div>
+			<div class="mySlides fade">
+				<img src="Images/hero-bg-03.jpg" style="width:100%">
+				<div class="ctext">
+					<h1>Download Synthetica today,it's free forever.</h1>
+					<button class="carousel-button">Download template</button>
+					<p class="ctext-p">
+						<i>available exclusively from Codrops</i>
+					</p>
+				</div>
+			</div>
+			<div class="mouse">
+				<div class="mouse-animation">
+
+				</div>
+
+			</div>
+			<div class="dots">
+				<span class="dot" onclick="currentSlide(1)"></span> 
+				<span class="dot" onclick="currentSlide(2)"></span> 
+				<span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+		</div>
+		<section class="collective" id="collective-id">
+			<h3>The collective</h3>
+			<p>
+				8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella. Kinfolk 
+				gluten-free lo-fi quinoa. Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale 
+				chips chillwave kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic 
+				slow-carb hashtag, hammock pour-over chambray viral VHS normcore.
+			</p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/FMug2TPuWAE" frameborder="0" 
+			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<p>	8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella. Kinfolk
+				gluten-free lo-fi quinoa.
+
+				Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips chillwave 
+				kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic slow-carb 
+				hashtag, hammock pour-over chambray viral VHS normcore.
+			</p>
+		</section>
+		<section class="crew" id="crew-id">
+			<h3>The crew</h3>
+			<div class="crew-container">
+				<ul>
+					<li>
+						<a href="#"><img src="images/crew-peter-finlan.jpg" alt="a" height="300" width="250"><br></a>
+						<div class="img-text">
+							<div class="text">
+								<h5>Peter finlan</h5>
+								<p>
+									8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#"><img src="images/crew-blaz-robar.jpg" alt="a" height="300" width="250"><br></a>
+						<div class="img-text">
+							<div class="text">
+								<h5>Blaz robar</h5>
+								<p>
+									8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#"><img src="images/crew-mary-lou.jpg" alt="a" height="300" width="250"><br></a>
+						<div class="img-text">
+							<div class="text">
+								<h5>Mary lou</h5>
+								<p>
+									8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#"><img src="images/crew-dude.jpg" alt="a" height="300" width="250"><br></a>
+						<div class="img-text">
+							<div class="text">
+								<h5>Kobe west</h5>
+								<p>
+									8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="row-skills">
+				<div class="bar-chart">
+					<h5 class="bar-chart-text">
+						EXPERIENCE DESIGN 
+					</h5>
+					<div class="bar-wrapper">
+						<div class="bar" title="90%">
+								
+						</div>
+					</div>
+				</div>
+				<div class="bar-chart">
+					<h5 class="bar-chart-text">
+						HTML5/CSS3
+					</h5>
+					<div class="bar-wrapper">
+						<div class="bar" title="95%">
+									
+						</div>
+					</div>
+				</div>	
+				<div class="bar-chart">
+					<h5 class="bar-chart-text">
+						INTERACTIVE PROTOTYPING
+					</h5>
+					<div class="bar-wrapper">
+						<div class="bar" title="80%">
+										
+						</div>
+					</div>
+				</div>
+				<div class="bar-chart">
+					<h5 class="bar-chart-text">
+						VISUAL DESIGN
+					</h5>
+					<div class="bar-wrapper">
+						<div class="bar" title="90%">
+										
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="status" id="articles-id">
+			<div class="status-container">
+				<div class="awards">
+					<span>
+						<img src="images/cup.png" alt="pen" height="50" width="50">
+					</span>
+					<div class="data">
+						<p class="status-number-cup">41</p>
+						<p class="ptext">awards won</p>
+					</div>
+				</div>
+			</div>
+			<div class="status-container">
+				<div class="awards">
+					<span>
+						<img src="images/book.png" alt="pen" height="50" width="50">
+					</span>
+					<div class="data">
+						<p class="status-number-book">343</p>
+						<p class="ptext">articles</p>
+					</div>
+				</div>
+			</div>
+			<div class="status-container">
+				<div class="awards">
+					<span>
+						<img src="images/pen.png" alt="pen"height="50" width="50">
+					</span>
+					<div class="data">
+						<p class="status-number-pen">43</p>
+						<p class="ptext">freebies</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="latest-articles">
+			<div class="article-header">
+				<h3>Latest Articles	</h3>
+				<h4>Sort by</h4>
+				<select>
+					<option vale="design">experience design</option>
+					<option vale="design">visual design</option>
+					<option vale="design">pattern design</option>
+					<option vale="design">UI design</option>
+				</select>
+			</div>
+			<div class="article-images">
+				<article class="block">
+                    <img src="Images/article-01.jpg" alt="Product">
+                    <div class="block-image"></div>
+                    <h2>8 solid tips when working with front-end developers<span>></span></h2>
+                    <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
+                    <div class="links">
+                        <a href="#">Product</a>
+                        <span><i class="fa fa-comments"></i>51</span>
+                    </div>
+				</article>
+				<article class="block">
+                    <img src="Images/article-02.jpg" alt="Product">
+                    <div class="block-image"></div>
+                    <h2>The 10 best traits of a awesome design leaders<span>></span></h2>
+                    <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
+                    <div class="links">
+                        <a href="#">Teams</a>
+                        <span><i class="fa fa-comments"></i>42</span>
+                    </div>
+				</article> 
+				<article class="block">
+                    <img src="Images/article-03.jpg" alt="Product">
+                    <div class="block-image"></div>
+                    <h2>How to design well collaboratively with an agile product team<span>></span></h2>
+                    <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
+                    <div class="links">
+                        <a href="#">Teams</a>
+                        <span><i class="fa fa-comments"></i>58</span>
+                    </div>
+				</article>
+				<article class="block">
+                    <img src="Images/article-04.jpg" alt="Product">
+                    <div class="block-image"></div>
+                    <h2>The essentials of modern interaction design (mobile + tablet)<span>></span></h2>
+                    <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
+                    <div class="links">
+                        <a href="#">Ux Design</a>
+                        <span><i class="fa fa-comments"></i>14</span>
+                    </div>
+				</article>
+				<article class="block">
+                    <img src="Images/article-05.jpg" alt="Product">
+                    <div class="block-image"></div>
+                    <h2>Overcoming barriers encountered in the pitch process (part 1)<span>></span></h2>
+                    <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
+                    <div class="links">
+                        <a href="#">Product</a>
+                        <span><i class="fa fa-comments"></i>55</span>
+                    </div>
+				</article>
+				<article class="block">
+                    <img src="Images/article-06.jpg" alt="Product">
+                    <div class="block-image"></div>
+                    <h2>10 things we've learnt about our users (Case Study)<span>></span></h2>
+                    <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
+                    <div class="links">
+                        <a href="#">UX Design</a>
+                        <span><i class="fa fa-comments"></i>20</span>
+                    </div>
+                </article> 
+			</div>
+			<div class="article-button">
+				<button class="view-more" type="button">VIEW MORE</button>
+			</div>
+		</section>
+		<section class="freshest-freebies" id="freshest-freebies-id">
+		<h3>Freshest Freebies</h3>
+		<div class="freshest-freebies-text">
+		<p class="left">
+			A posuere donec senectus suspendisse bibendum magna ridiculus a
+			justo orci parturient suspendisse ad rhoncus cursus ut parturient 
+			viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim 
+			est duis facilisis congue a lacus adipiscing consequat risus 
+			consectetur scelerisque integer suspendisse a mus integer elit.
+		</p>
+		<p class="right">
+			A posuere donec senectus suspendisse bibendum magna ridiculus a
+			justo orci parturient suspendisse ad rhoncus cursus ut parturient 
+			viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim 
+			est duis facilisis congue a lacus adipiscing consequat risus 
+			consectetur scelerisque integer suspendisse a mus integer elit.
+		</p>
+		</section>
+		<section class="image-block">
+			<div class="images">
+			<img src="Images/freebie-01.jpg">
+			<img src="Images/freebie-02.jpg">
+			<img src="Images/freebie-03.jpg">
+			<img src="Images/freebie-04.jpg">
+			</div>
+			<div class ="button">
+			<button class="view-more">view more</button>
+			</div>
+		</section>
+		<section class="get-started">
+			<p>	Get started now. Download Synthetica FREE, via Codrops.</p>
+			<button class="get-start">GET STARTED</button>
+		</section>
+	</div> 
+	<footer>
+		<div class="footer-logo">
+			<img src="Images/footer.png" height=100 width=300>
+			<p>A free HTML5/CSS3 template, exclusively for <span class="bold-italic">Codrops</span></p>
+		</div>
+		<nav style="display: flex">
+			<ul class="footer-nav">
+				<li><a href="#">The Collective</a></li>
+				<li><a href="#">The Crew</a></li>
+				<li><a href="#">Articles</a></li>
+				<li><a href="#">Freebies</a></li>
+				<li><a href="#">Subscribe</a></li>
+			</ul>
+			<ul class="footer-share">
+				<li><a href="#">Licence</a></li>
+				<li><a href="#"><i class="fa fa-share"></i>Share</a></li>
+			</ul>
+		</nav>
+		<p>A free website template created exclusively for <a href="#">Codrops</a></p>
+	</footer>
+	<script src="menuburger.js"></script>
+	<!-- <script>
+			document.getElementById("menubtn").addEventListener('click',showmenuitems);
+			function showmenuitems(){
+				var   x=document.getElementsByClassName("menuitems")[0];
+				if(x.style.visibility!="hidden")
+				{
+				x.style.visibility="hidden";
+				}
+				else{
+				x.style.visibility="visible";
+				}
+			}
+	</script> -->
+	<script src="carousel.js" defer>
+
+	</script>
+	<script src="crewbar.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+	<script type="text/javascript">
+		$(".status-number-cup").counterUp({delay:10, time:2000});
+		$(".status-number-book").counterUp({delay:10, time:2000});
+		$(".status-number-pen").counterUp({delay:10, time:2000});
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		 $(document).ready(function()
+		 {
+			$("a").on('click', function(event) 
+				{
+					if (this.hash !== "") 
+						{
+							event.preventDefault();
+  							var hash = this.hash;
+							$('html, body').animate({scrollTop: $(hash).offset().top}, 2000, function(){
+								window.location.hash = hash;
+ 							});
+						} 
+				});
+		});
+	</script>	 
+</body>
+</html>
